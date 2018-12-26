@@ -1,6 +1,7 @@
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Assembly-CSharp.pdb
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Boo.Lang.dll
+/Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Google.ProtocolBuffers.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/mscorlib.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/System.Core.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/System.dll
@@ -259,4 +260,3 @@
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/Assembly-CSharp.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/Assembly-CSharp.pdb
-/Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Google.ProtocolBuffers.dll

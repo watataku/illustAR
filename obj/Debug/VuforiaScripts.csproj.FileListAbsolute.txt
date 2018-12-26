@@ -1,6 +1,7 @@
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/VuforiaScripts.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/VuforiaScripts.pdb
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Boo.Lang.dll
+/Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Google.ProtocolBuffers.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/mscorlib.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/SyntaxTree.VisualStudio.Unity.Bridge.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/System.Core.dll
@@ -283,9 +284,7 @@
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Unity.IvyParser.dll.mdb
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.xml
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
-/Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/VuforiaScripts.csprojAssemblyReference.cache
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/VuforiaScripts.csproj.CoreCompileInputs.cache
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/VuforiaScripts.csproj.CopyComplete
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/VuforiaScripts.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/obj/Debug/VuforiaScripts.pdb
-/Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Google.ProtocolBuffers.dll
