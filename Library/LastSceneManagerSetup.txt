@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ARmode.unity
+- path: Assets/Scenes/ControlMode.unity
   isLoaded: 1
   isActive: 1
