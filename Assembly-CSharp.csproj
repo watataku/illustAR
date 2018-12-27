@@ -189,11 +189,6 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrVRHelpers.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
-    <Compile Include="Assets\SamplesResources\Scripts\Autofocus.cs" />
-    <Compile Include="Assets\SamplesResources\Scripts\BackButton.cs" />
-    <Compile Include="Assets\SamplesResources\Scripts\FrameRateControl.cs" />
-    <Compile Include="Assets\SamplesResources\Scripts\ToggleTargetRender.cs" />
-    <Compile Include="Assets\Script\ARManager.cs" />
     <Compile Include="Assets\Script\ImageController.cs" />
     <Compile Include="Assets\Script\TargetManager.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />

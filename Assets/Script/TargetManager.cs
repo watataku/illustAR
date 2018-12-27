@@ -1,27 +1,17 @@
 ﻿using System.IO;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using Vuforia;
 
 public class TargetManager : MonoBehaviour {
 
     const string imageTargetPath = "/Textures/liner_image.png";
     public GameObject imagePlate;
-
     public Texture2D TargetImageTexture;
-    public Material TargetImageMaterial;
 
 	// Use this for initialization
 	void Start () {
+        // PNG画像からテクスチャを作成する
         TargetImageTexture = PngToTex2D(Application.streamingAssetsPath + imageTargetPath);
-        
-
-        Debug.Log("LinerImage is");
-        Debug.Log(TargetImageTexture);
-
-
+        // キャンバスにテクスチャを適用する
         imagePlate.GetComponent<Renderer>().material.mainTexture = TargetImageTexture;
     }
 
@@ -31,6 +21,8 @@ public class TargetManager : MonoBehaviour {
         
 	}
 
+    // PNG画像からテクスチャを生成するメソッド
+    // 参考: http://urx2.nu/OP8B
     Texture2D PngToTex2D(string path)
     {
         BinaryReader bin = new BinaryReader(new FileStream(path, FileMode.Open, FileAccess.Read));
@@ -43,5 +35,4 @@ public class TargetManager : MonoBehaviour {
         texture.LoadImage(rb);
         return texture;
     }
-
 }
