@@ -64,21 +64,6 @@
     <Compile Include="Assets\Common\Editor\ConfigurePlayerSettings.cs" />
     <Compile Include="Assets\Common\Editor\OptionsConfigEditor.cs" />
     <Compile Include="Assets\Common\Editor\TrackableSettingsEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Demos\Editor\PermissionsDemoBuildProcessor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\Controller\GvrControllerVisualEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\Controller\GvrLaserPointerEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\Controller\GvrLaserVisualEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\Controller\GvrTooltipEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\EventSystem\GvrPointerScrollInputEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\GvrBuildProcessor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\GvrEditorEmulatorEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\GvrEditorMenu.cs" />
-    <Compile Include="Assets\GoogleVR\Editor\GvrEditorSettings.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioListenerEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioRoomEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioSoundfieldEditor.cs" />
-    <Compile Include="Assets\GoogleVR\Legacy\Editor\Audio\GvrAudioSourceEditor.cs" />
     <None Include="Assets\Editor\Vuforia\VuforiaMars_ModelTarget\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\VuforiaMars_VuMark\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\Emulator\VuforiaEmulator.xml" />
@@ -347,9 +332,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.ProtocolBuffers">
-      <HintPath>/Users/watataku/GoogleDrive/UnityProject/illustAR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/watataku/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

@@ -1,25 +1,35 @@
 ﻿using System.IO;
 using UnityEngine;
 
-public class TargetManager : MonoBehaviour {
+public class TargetManager : MonoBehaviour
+{
 
-    const string imageTargetPath = "/Textures/liner_image.png";
+    const string linerImageTargetPath = "/Textures/liner_image.png";
+    const string rawImageTargetPath = "/Textures/raw_image.png";
     public GameObject imagePlate;
-    public Texture2D TargetImageTexture;
+    private Material ImageMaterial;
 
-	// Use this for initialization
-	void Start () {
-        // PNG画像からテクスチャを作成する
-        TargetImageTexture = PngToTex2D(Application.streamingAssetsPath + imageTargetPath);
-        // キャンバスにテクスチャを適用する
-        imagePlate.GetComponent<Renderer>().material.mainTexture = TargetImageTexture;
+    // Use this for initialization
+    void Start()
+    {
+        GetTarget(false);
     }
 
-	
-	// Update is called once per frame
-	void Update () {
-        
-	}
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    void GetTarget(bool isLiner)
+    {
+        // imageMaterialをimagePlateから取得する
+        ImageMaterial = imagePlate.GetComponent<Renderer>().material;
+        // PNG画像からテクスチャを作成する
+        ImageMaterial.mainTexture = PngToTex2D(Application.streamingAssetsPath + (isLiner ? linerImageTargetPath : rawImageTargetPath));
+        // テクスチャを適用する
+        imagePlate.GetComponent<Renderer>().material = ImageMaterial;
+    }
 
     // PNG画像からテクスチャを生成するメソッド
     // 参考: http://urx2.nu/OP8B

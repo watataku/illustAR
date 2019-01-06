@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{20CFE1DE-5AF7-D99D-B38C-F10B65684B92}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/TargetManager.cs">
+    <Files>
+      <File FileName="Assets/Script/UIManager.cs" Line="7" Column="1" />
+      <File FileName="Assets/Script/TargetManager.cs" Line="8" Column="62" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />

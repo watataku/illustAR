@@ -1,7 +1,6 @@
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/VuforiaEditorScripts.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/VuforiaEditorScripts.pdb
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Boo.Lang.dll
-/Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/Google.ProtocolBuffers.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/mscorlib.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/SyntaxTree.VisualStudio.Unity.Bridge.dll
 /Users/watataku/GoogleDrive/UnityProject/illustAR/Temp/bin/Debug/System.Core.dll

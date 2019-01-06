@@ -300,9 +300,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.ProtocolBuffers">
-      <HintPath>/Users/watataku/GoogleDrive/UnityProject/illustAR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/watataku/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
