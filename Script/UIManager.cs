@@ -3,19 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
-<<<<<<< HEAD
-
-/*!
- * UIのコントロールを管理するクラス
- */
-public class UIManager : MonoBehaviour {
-
-    // イメージに関する処理
-    public Image imageView; // 描画するイメージ
-    public GameObject ImagePlane; // ARモードで表示するイメージ
-    private Material imageMaterial;
-    private bool isAR = true;  // ARモードとUIモードの切り替え
-=======
 // using OpenCvSharp;
 
 public class UIManager : MonoBehaviour {
@@ -31,32 +18,17 @@ public class UIManager : MonoBehaviour {
     const string imageTargetPath = "/Textures/satori.jpg";
     private bool isLiner; // 線画化するか否かのフラグ
     private bool isAR;  // ARモードとUIモードの切り替え
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
 
     // デバッグ
     private int gaussianCounter, dilationCounter, thresholdCounter;
     public Text Gcnt, Dcnt, Tcnt;
 
-<<<<<<< HEAD
-    // 参照したイメージを管理するクラス
-    public TargetManager target;
-
-=======
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     // 2つのモードの切替用
     public GameObject UIMode;
     public GameObject ARMode;
 
 	// Use this for initialization
 	void Start () {
-<<<<<<< HEAD
-        Debug.Log(target);
-        imageMaterial = ImagePlane.GetComponent<Renderer>().material;
-        target.nullImageTexture = (Texture2D)imageMaterial.mainTexture;
-        ImageInit(7, 5, 220);
-        SwitchingDrawingMode();
-	}
-=======
         isLiner = false;
         isAR = true;
         ImageInit(7, 5, 220);
@@ -67,26 +39,12 @@ public class UIManager : MonoBehaviour {
 	void Update () {
 
     }
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
 
     void ImageInit(int gauss, int dil, int thresh)
     {
         gaussianCounter = gauss;
         dilationCounter = dil;
         thresholdCounter = thresh;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-    }
-
-    void ReloadImage(int gauss, int dil, int thresh)
-    {
-        // イメージの更新
-        target.setParametor(gauss, dil, thresh);
-        imageView.sprite = target.GetSprite();
-        imageMaterial.mainTexture = target.GetTargetImage();
-
-        // パラメータの表示を更新
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
     }
 
@@ -106,7 +64,6 @@ public class UIManager : MonoBehaviour {
         // キャンバスにテクスチャを適用する
         imageView.material.mainTexture = TargetImageTexture;
 
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
         Gcnt.text = gaussianCounter.ToString();
         Dcnt.text = dilationCounter.ToString();
         Tcnt.text = thresholdCounter.ToString();
@@ -116,85 +73,50 @@ public class UIManager : MonoBehaviour {
     public void SwitchingDrawingMode()
     {
         isAR = !isAR;
-<<<<<<< HEAD
-        // ARmanager.ActivateARMode(isLineDrawing);
-=======
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
         UIMode.SetActive(!isAR);
         ARMode.SetActive(isAR);
     }
 
     // 線画<->イラストの切り替え
-<<<<<<< HEAD
-    public void SwitchingLineDrawing()
-    {
-        target.isLineDrawing = !target.isLineDrawing;
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-=======
     public void TrigerOfLiner()
     {
         isLiner = !isLiner;
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     }
 
     // パラメータの調整
     public void GaussianPlusOnClick()
     {
         gaussianCounter += 2;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     }
     public void GaussianMinusOnClick()
     {
         if (gaussianCounter <= 1) return;
         gaussianCounter -= 2;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     }
     public void DilationPlusOnClick()
     {
         dilationCounter += 2;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     }
     public void DilationMinusOnClick()
     {
         if (dilationCounter <= 1) return;
         dilationCounter -= 2;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     }
     public void ThresholdPlusOnClick()
     {
         if (thresholdCounter >= 250) return;
         thresholdCounter += 10;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
     }
     public void ThresholdMinusOnClick()
     {
         if (thresholdCounter <= 0) return;
         thresholdCounter -= 10;
-<<<<<<< HEAD
-        ReloadImage(gaussianCounter, dilationCounter, thresholdCounter);
-    }
-=======
         ReloadImage(isLiner, gaussianCounter, dilationCounter, thresholdCounter);
     }
 
@@ -257,5 +179,4 @@ public class UIManager : MonoBehaviour {
         return ConvertedImage;
     }
     */
->>>>>>> 4f418839d8c3d2c3aece6b3630a3e38d5d45e148
 }
